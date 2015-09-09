@@ -47,7 +47,7 @@ $("#zane").click(function(){
 			score = diamondPoint + score;
 			$('#Score').text('Your Score ' + score);
 	}
-	else if(computerChoice > 33){
+	else if(computerChoice > 34){
 		computerChoice = "Nothing";	
 			$('#received').text("You got Rocks");
 			score = nothingPoint + score;	
@@ -59,13 +59,13 @@ $("#zane").click(function(){
 			score = goldPoint + score;
 			$('#Score').text('Your Score ' + score);
 	}
-	else if(computerChoice > 15 && computerChoice < 31){
+	else if(computerChoice > 16 && computerChoice < 31){
 		computerChoice = "Silver";
 			$('#received').text("You got Silver");	
 			score = silverPoint + score;
 			$('#Score').text('Your Score ' + score);
 	}
-	else if(computerChoice > 31 && computerChoice <32 ){
+	else if(computerChoice > 31 && computerChoice <33 ){
 		computerChoice = "Shield";
 			alert("You got The Shield");	
 			score = captainshieldPiont + score;
