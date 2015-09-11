@@ -49,7 +49,7 @@ $("#zane").click(function(){
 			score = diamondPoint + score;
 			$('#Score').text('Your Score ' + score);
 	}
-	else if(computerChoice > 44){
+	else if(computerChoice > 55){
 		computerChoice = "Nothing";	
 			$('#received').text("You got Rocks");
 			score = nothingPoint + score;	
@@ -72,7 +72,7 @@ $("#zane").click(function(){
 			alert("You got The Shield");	
 			score = captainshieldPiont + score;
 	}
-	else if(computerChoice > 33 && computerChoice < 44){
+	else if(computerChoice > 33 && computerChoice < 55){
 		computerChoice = "Refined Rocks";
 			$('#received').text("You got Refined Rocks");
 			score = refinedPoint + score;
