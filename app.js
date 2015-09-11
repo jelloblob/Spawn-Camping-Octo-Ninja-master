@@ -6,6 +6,8 @@ var captainshieldPiont = 200;
 
 var goldPoint = 25;
 
+var refinedPoint = 5
+
 var nothingPoint = 1;
 
 var diamondPoint = 50;
@@ -69,6 +71,12 @@ $("#zane").click(function(){
 		computerChoice = "Shield";
 			alert("You got The Shield");	
 			score = captainshieldPiont + score;
+	}
+	else if(computerChoice > 33 && computerChoice < 44){
+		computerChoice = "Refined Rocks";
+			$('#received').text("You got Refined Rocks");
+			score = refinedPoint + score;
+			$('#Score').text('Your Score ' + score);
 	}
 });
 
