@@ -55,7 +55,7 @@ $("#zane").click(function(){
 			score = nothingPoint + score;	
 			$('#Score').text('Your Score ' + score);
 	}	
-	else if(computerChoice > 5 && computerChoice < 16w){
+	else if(computerChoice > 5 && computerChoice < 16){
 		computerChoice = "Gold";
 			$('#received').text("You got Gold");
 			score = goldPoint + score;
