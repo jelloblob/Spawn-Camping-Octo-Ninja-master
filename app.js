@@ -36,8 +36,6 @@ function timer()
 	$("#Timer").text(count);
 }
 $("#zane").click(function(){
-	var count=30;
-// The count starts here
 
 
 //everything below this is for the text that pops up and how the values work
