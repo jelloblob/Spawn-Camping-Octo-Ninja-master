@@ -39,7 +39,7 @@ $("#zane").click(function(){
 
 
 //everything below this is for the text that pops up and how the values work
-	computerChoice = Math.floor(Math.random()*100);
+	computerChoice = Math.floor(Math.random()*115);
 	if(computerChoice < 5){
 		computerChoice = "Diamond";
 			$('#received').text("You got Diamond");
