@@ -1,6 +1,8 @@
-var score = 0;
+var score = 0; 
 
 var silverPoint = 10;
+
+var BetterMiners
 
 var captainshieldPiont = 200;
 
@@ -17,7 +19,7 @@ var computerChoice;
 
 var start = new Date();
 
-var count=30;
+var count=60;
 // The count starts here
 
 var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
@@ -36,8 +38,6 @@ function timer()
 	$("#Timer").text(count);
 }
 $("#zane").click(function(){
-
-
 //everything below this is for the text that pops up and how the values work
 	computerChoice = Math.floor(Math.random()*115);
 	if(computerChoice < 5){
