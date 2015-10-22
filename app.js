@@ -1,20 +1,18 @@
 var score = 0; 
 
-var diamondminePoint = 350;
+var diamondminePoint = 550,050;
 
-var silverPoint = 10;
+var silverPoint = 15;
 
 var BetterMiners
 
-var goldminePoint = 200;
+var goldminePoint = 100,000;
 
-var goldPoint = 25;
+var goldPoint = 1,179;
 
-var refinedPoint = 5
+var nothingPoint = 10;
 
-var nothingPoint = 1;
-
-var diamondPoint = 50;
+var diamondPoint = 5,000;
 // these variables are for the score they are for differnent values 
 
 var computerChoice;
@@ -41,46 +39,40 @@ function timer()
 }
 $("#zane").click(function(){
 //everything below this is for the text that pops up and how the values work
-	computerChoice = Math.floor(Math.random()*125);
-	if(computerChoice < 5){
+	computerChoice = Math.floor(Math.random()*200);
+	if(computerChoice > 4 && computerChoice < 11){
 		computerChoice = "Diamond";
 			$('#received').text("You got Diamond");
 			score = diamondPoint + score;
 			$('#Score').text('You have $' + score);
 	}
-	else if(computerChoice > 55){
+	else if(computerChoice > ){
 		computerChoice = "Nothing";	
 			$('#received').text("You got Rocks");
 			score = nothingPoint + score;	
 			$('#Score').text('You have $' + score);
 	}	
-	else if(computerChoice > 5 && computerChoice < 16){
+	else if(computerChoice > 10 && computerChoice < 21){
 		computerChoice = "Gold";
 			$('#received').text("You got Gold");
 			score = goldPoint + score;
 			$('#Score').text('You have $' + score);
 	}
-	else if(computerChoice > 16 && computerChoice < 31){
+	else if(computerChoice > 20 && computerChoice < 101){
 		computerChoice = "Silver";
 			$('#received').text("You got Silver");	
 			score = silverPoint + score;
 			$('#Score').text('You have $' + score);
 	}
-	else if(computerChoice > 31 && computerChoice <33 ){
+	else if(computerChoice > 0 && computerChoice < 2){
 		computerChoice = "Diamond Mine";
 			alert("You Found a Diamond Mine");	
 			score = diamondminePoint + score;
 	}
-	else if(computerChoice > 33 && computerChoice <35 ){
+	else if(computerChoice > 1 && computerChoice < 5){
 		computerChoice = "Gold Mine";
 			alert("You found a Gold Mine");	
 			score = goldminePoint + score;
-	}
-	else if(computerChoice > 35 && computerChoice < 55){
-		computerChoice = "Refined Rocks";
-			$('#received').text("You got Refined Rocks");
-			score = refinedPoint + score;
-			$('#Score').text('You have $' + score);
 	}
 });
 
