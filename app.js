@@ -1,18 +1,18 @@
 var score = 0; 
 
-var diamondminePoint = 550,050;
+var diamondminePoint = 550050;
 
 var silverPoint = 15;
 
 var BetterMiners
 
-var goldminePoint = 100,000;
+var goldminePoint = 100000;
 
-var goldPoint = 1,179;
+var goldPoint = 1179;
 
 var nothingPoint = 10;
 
-var diamondPoint = 5,000;
+var diamondPoint = 5000;
 // these variables are for the score they are for differnent values 
 
 var computerChoice;
