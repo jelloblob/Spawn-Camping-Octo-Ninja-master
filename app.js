@@ -46,7 +46,7 @@ $("#zane").click(function(){
 			score = diamondPoint + score;
 			$('#Score').text('You have $' + score);
 	}
-	else if(computerChoice > ){
+	else if(computerChoice > 100){
 		computerChoice = "Nothing";	
 			$('#received').text("You got Rocks");
 			score = nothingPoint + score;	
