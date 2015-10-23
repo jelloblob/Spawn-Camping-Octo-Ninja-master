@@ -40,13 +40,13 @@ function timer()
 $("#zane").click(function(){
 //everything below this is for the text that pops up and how the values work
 	computerChoice = Math.floor(Math.random()*200);
-	if(computerChoice > 4 && computerChoice < 11){
+	if(computerChoice > 5 && computerChoice < 11){
 		computerChoice = "Diamond";
 			$('#received').text("You got Diamond");
 			score = diamondPoint + score;
 			$('#Score').text('You have $' + score);
 	}
-	else if(computerChoice > 100){
+	else if(computerChoice > 76){
 		computerChoice = "Nothing";	
 			$('#received').text("You got Rocks");
 			score = nothingPoint + score;	
@@ -58,7 +58,7 @@ $("#zane").click(function(){
 			score = goldPoint + score;
 			$('#Score').text('You have $' + score);
 	}
-	else if(computerChoice > 20 && computerChoice < 101){
+	else if(computerChoice > 20 && computerChoice < 126){
 		computerChoice = "Silver";
 			$('#received').text("You got Silver");	
 			score = silverPoint + score;
@@ -69,7 +69,7 @@ $("#zane").click(function(){
 			alert("You Found a Diamond Mine");	
 			score = diamondminePoint + score;
 	}
-	else if(computerChoice > 1 && computerChoice < 5){
+	else if(computerChoice > 1 && computerChoice < 6){
 		computerChoice = "Gold Mine";
 			alert("You found a Gold Mine");	
 			score = goldminePoint + score;
