@@ -1,12 +1,16 @@
-var score = 0; 
+var score = 0;
 
-var diamondminePoint = 550050;
+var lavaPoint = 1000;
+
+var avalanchePoint = 5000;
+
+var diamondminePoint = 50000;
 
 var silverPoint = 15;
 
 var BetterMiners
 
-var goldminePoint = 100000;
+var goldminePoint = 10000;
 
 var goldPoint = 1179;
 
@@ -39,14 +43,14 @@ function timer()
 }
 $("#zane").click(function(){
 //everything below this is for the text that pops up and how the values work
-	computerChoice = Math.floor(Math.random()*200);
+	computerChoice = Math.floor(Math.random()*215);
 	if(computerChoice > 5 && computerChoice < 11){
 		computerChoice = "Diamond";
 			$('#received').text("You got Diamond");
 			score = diamondPoint + score;
 			$('#Score').text('You have $' + score);
 	}
-	else if(computerChoice > 76){
+	else if(computerChoice > 134){
 		computerChoice = "Nothing";	
 			$('#received').text("You got Rocks");
 			score = nothingPoint + score;	
@@ -74,6 +78,16 @@ $("#zane").click(function(){
 			alert("You found a Gold Mine");	
 			score = goldminePoint + score;
 	}
+	else if(computerChoice > 125 && computerChoice < 131){
+		computerChoice = "Lava";
+			alert("You fell in Lava");	
+			score = score - lavaPoint;	
+	}
+	else if(computerChoice > 130 && computerChoice < 135){
+		computerChoice = "Avalanche";
+			alert("An Avalanche fell on you");	
+			score = score - avalanchePoint;	
+	}	
 });
 
 
