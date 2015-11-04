@@ -2,17 +2,19 @@ var score = 0;
 
 var lavaPoint = 1000;
 
+var platimumPoint = 964;
+
 var avalanchePoint = 5000;
+
+var elixirPoint = 70000;
 
 var diamondminePoint = 50000;
 
 var silverPoint = 15;
 
-var BetterMiners
-
 var goldminePoint = 10000;
 
-var goldPoint = 1179;
+var goldPoint = 1323;
 
 var nothingPoint = 10;
 
@@ -43,16 +45,16 @@ function timer()
 }
 $("#zane").click(function(){
 //everything below this is for the text that pops up and how the values work
-	computerChoice = Math.floor(Math.random()*215);
+	computerChoice = Math.floor(Math.random()*218);
 	if(computerChoice > 5 && computerChoice < 11){
 		computerChoice = "Diamond";
 			$('#received').text("You got Diamond");
 			score = diamondPoint + score;
 			$('#Score').text('You have $' + score);
 	}
-	else if(computerChoice > 134){
-		computerChoice = "Nothing";	
-			$('#received').text("You got Rocks");
+	else if(computerChoice > 140){
+		computerChoice = "Random Metals";	
+			$('#received').text("You got Random Metals");
 			score = nothingPoint + score;	
 			$('#Score').text('You have $' + score);
 	}	
@@ -87,7 +89,18 @@ $("#zane").click(function(){
 		computerChoice = "Avalanche";
 			alert("An Avalanche fell on you");	
 			score = score - avalanchePoint;	
-	}	
+	}
+	else if(computerChoice > 134 && computerChoice < 136){
+		computerChoice = "Elixir of life";
+			alert("You Drank the Elixir of Life!");	
+			score = score - elixirPoint;	
+	}
+	else if(computerChoice > 135 && computerChoice < 141){
+		computerChoice = "Platimum";
+			$('#received').text("You got Platinum");	
+			score = platimumPoint + score;
+			$('#Score').text('You have $' + score);
+	}		
 });
 
 
